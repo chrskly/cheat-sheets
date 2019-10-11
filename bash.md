@@ -1,5 +1,42 @@
 # bash
 
+## Long strings
+
+### += operator
+```
+text="blah blah blah"
+text+="blah blah blah"
+```
+### += operator and newlines/tabs
+```
+text=$'blah blah blah\n'
+text+=$'blah blah blah'
+```
+
+### printf
+```
+printf -v text "%s"\
+  "blah blah blah" \
+  "blah blah blah"
+```
+
+### Arrays
+```
+text=("blah blah blah"
+      "blah blah blah")
+text+=("blah blah blah")
+echo "${text[*]}"
+```
+
+### here-document
+```
+read -r -d '' text <<-"EOT"
+  blah blah blah
+  blah blah blah
+EOT
+```
+
+
 ## Colourising terminal output
 
 You can use these ANSI escape codes:
