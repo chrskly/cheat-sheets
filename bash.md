@@ -39,6 +39,7 @@ EOT
 
 ## Colourising terminal output
 
+```
 You can use these ANSI escape codes:
 
 Black        0;30     Dark Gray     1;30
@@ -56,3 +57,4 @@ And then use them like this in your script:
 RED='\033[0;31m'
 NC='\033[0m' # No Color
 printf "I ${RED}love${NC} Stack Overflow\n"
+```
