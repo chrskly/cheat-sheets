@@ -15,3 +15,9 @@ vboxmanage clonevm --mode all --basefolder /new/path/ --register <vm-to-clone>
 ```
 vboxmanage modifyvm <old-name> --name <new-name>
 ```
+
+## Change directory where vms are stored
+```
+vboxmanage setproperty machinefolder /path/to/directory/
+vboxmanage list systemproperties | grep folder
+```
