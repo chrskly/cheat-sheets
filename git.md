@@ -10,3 +10,7 @@ Run rm -rf .git/modules/path_to_submodule
 Commit git commit -m "Removed submodule <name>"
 Delete the now untracked submodule files
 rm -rf path_to_submodule
+
+## Search through history for string (a.k.a. pickaxe)
+
+git log -Ssomestring
