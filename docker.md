@@ -1,7 +1,24 @@
 # docker
 
 ## Building images
+```
 docker build -t somename .
+```
+
+## Temporarily run as a different user (e.g. force root for experimenting)
+```
+docker run -it --user 0 some/container /bin/sh
+```
+
+## Override the entrypoint (sometimes needed when you want to just get a shell)
+```
+docker run -it --entrypoint /bin/sh some/container
+```
+
+## Build one target in multistage build
+```
+docker build . --target=build-env
+```
 
 ## Setting up a swarm
 docker swarm init
