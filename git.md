@@ -12,5 +12,11 @@ Delete the now untracked submodule files
 rm -rf path_to_submodule
 
 ## Search through history for string (a.k.a. pickaxe)
-
+```
 git log -Ssomestring
+```
+
+## Set email
+```
+git config --local --add user.email user@domain.com
+```
