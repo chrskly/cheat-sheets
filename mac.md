@@ -10,3 +10,5 @@ sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plis
 sudo mdutil -a -i on /
 sudo mdutil -a -i on /System/Volumes/Data
 ```
+
+sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder

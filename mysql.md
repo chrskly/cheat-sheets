@@ -43,3 +43,7 @@ OR
 mysqlcheck -o tablename
 mysqlcheck -o --all-databases -u root
 ```
+
+## Slave replication
+
+CHANGE MASTER TO MASTER_HOST='10.128.0.15',MASTER_USER='replicauser', MASTER_PASSWORD='replicauser-secret-password', MASTER_LOG_FILE='mysql-bin.000001', MASTER_LOG_POS=  706;
